@@ -20,9 +20,9 @@ const nextPageKey = 'k';
 window.addEventListener('keydown', (e) => {
 
   if (e.key === prevPageKey) {
-    //console.log(`${scriptTitle}: \'${prevPageKey}\' pressed`);
     e.preventDefault();
     e.stopPropagation();
+    //console.log(`${scriptTitle}: \'${prevPageKey}\' pressed`);
 
     const leftArrow = new KeyboardEvent('keydown', {
         key: 'ArrowLeft',
@@ -37,9 +37,9 @@ window.addEventListener('keydown', (e) => {
   }
 
   else if (e.key === nextPageKey) {
-    //console.log(`${scriptTitle}: \'${nextPageKey}\' pressed`);
     e.preventDefault();
     e.stopPropagation();
+    //console.log(`${scriptTitle}: \'${nextPageKey}\' pressed`);
 
     const rightArrow = new KeyboardEvent('keydown', {
         key: 'ArrowRight',
