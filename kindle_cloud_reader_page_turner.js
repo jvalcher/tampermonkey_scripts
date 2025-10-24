@@ -4,8 +4,9 @@
 // @author       jvalcher
 // @version      0.1
 // @namespace    https://github.com/jvalcher/tampermonkey_scripts
-// @match        https://read.amazon.com/?asin=*
-// @icon         https://www.google.com/s2/favicons?sz=64&domain=amazon.com
+// @match        https://read.amazon.com/*?asin=*
+// @icon         https://upload.wikimedia.org/wikipedia/commons/d/de/Amazon_icon.png
+// @noframes
 // @run-at       document-end
 // ==/UserScript==
 
