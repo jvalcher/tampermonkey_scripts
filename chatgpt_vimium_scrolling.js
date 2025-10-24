@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         ChatGPT Vimium Scrolling
-// @author       You
+// @author       jvalcher
 // @version      0.1
-// @namespace    https://github.com/jvalcher/tampermonkey_scripts/blob/main/chatgpt_vimium_scrolling.js
+// @namespace    https://github.com/jvalcher/tampermonkey_scripts
 // @description  Press escape twice in ChatGPT text box to allow Vimium scrolling
 // @icon         https://upload.wikimedia.org/wikipedia/commons/e/ef/ChatGPT-Logo.svg
 // @match        https://chatgpt.com/c/*
