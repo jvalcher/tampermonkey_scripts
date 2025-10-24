@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         Kindle Cloud Reader Page Turner
-// @namespace    http://tampermonkey.net/
-// @version      0.1
-// @description  Navigate Kindle Cloud Reader pages with custom keys
 // @author       You
+// @version      0.1
+// @namespace    https://github.com/jvalcher/tampermonkey_scripts/blob/main/kindle_cloud_reader_page_turner.js
+// @description  Navigate Kindle Cloud Reader pages with custom keys
 // @match        https://read.amazon.com/?asin=*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=amazon.com
 // @run-at       document-end
