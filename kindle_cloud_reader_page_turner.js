@@ -10,9 +10,7 @@
 // @run-at       document-end
 // ==/UserScript==
 
-(function() {
-
-'use strict';
+(function() { 'use strict';
 
 const scriptTitle = "Kindle Cloud Reader Page Turner";
 const prevPageKey = 'j';
