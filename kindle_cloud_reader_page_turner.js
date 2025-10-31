@@ -1,13 +1,14 @@
 // ==UserScript==
-// @name         Kindle Cloud Reader Page Turner
-// @description  Navigate Kindle Cloud Reader pages with custom keys
-// @author       jvalcher
-// @version      0.1
-// @namespace    https://github.com/jvalcher/tampermonkey_scripts
-// @match        https://read.amazon.com/*?asin=*
-// @icon         https://upload.wikimedia.org/wikipedia/commons/d/de/Amazon_icon.png
+// @name          Kindle Cloud Reader Page Turner
+// @description   Navigate Kindle Cloud Reader pages with custom keys
+// @author        jvalcher
+// @version       0.1
+// @namespace     https://github.com/jvalcher/tampermonkey_scripts
+// @match         https://read.amazon.com/?asin*
+// @exclude       https://read.amazon.com/kindle-library*
+// @icon          https://upload.wikimedia.org/wikipedia/commons/d/de/Amazon_icon.png
 // @noframes
-// @run-at       document-end
+// @run-at        document-end
 // ==/UserScript==
 
 (function() { 'use strict';
