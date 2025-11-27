@@ -10,15 +10,17 @@
 
 (function() { 'use strict';
 
-const scriptTitle = "ChatGPT Vimium Scrolling";
+const scriptTitle = "Tampermonkey -- ChatGPT Vimium Scrolling";
 const escapeKey = "Escape";
 
-document.addEventListener("keydown", function(event) {
-    if (event.key === escapeKey) {
-        //console.log(`${scriptTitle}: escape pressed`);
-        document.querySelector("article:last-of-type").click();
-    }
+window.addEventListener("load", (event) => {
+  document.addEventListener("keydown", function(event) {
+      if (event.key === escapeKey) {
+          //console.log(`${scriptTitle}: escape pressed`);
+          document.querySelector("article:last-of-type").click();
+      }
+      console.log(`${scriptTitle}: script loaded`);
+  });
 });
 
-console.log(`${scriptTitle}: script loaded`);
 })();
