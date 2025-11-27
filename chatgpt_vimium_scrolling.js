@@ -5,7 +5,7 @@
 // @version      0.2
 // @namespace    https://github.com/jvalcher/tampermonkey_scripts
 // @icon         https://upload.wikimedia.org/wikipedia/commons/e/ef/ChatGPT-Logo.svg
-// @match        https://chatgpt.com/c/*
+// @match        https://chatgpt.com/*
 // ==/UserScript==
 
 (function() { 

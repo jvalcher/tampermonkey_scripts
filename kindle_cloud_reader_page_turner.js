@@ -11,7 +11,7 @@
 // @run-at        document-end
 // ==/UserScript==
 
-(function() { 
+(function() {
     "use strict";
 
     function log(msg) {
@@ -26,15 +26,16 @@
     const nextPageKey = 'k';
 
     window.addEventListener("load", () => {
-        window.addEventListener('keydown', (e) => {
+        window.addEventListener("keydown", (e) => {
 
             if (e.key === prevPageKey) {
                 e.preventDefault();
                 e.stopPropagation();
                 //log(`\'${prevPageKey}\' pressed`);
-                const leftArrow = new KeyboardEvent('keydown', {
-                    key: 'ArrowLeft',
-                    code: 'ArrowLeft',
+
+                const leftArrow = new KeyboardEvent("keydown", {
+                    key: "ArrowLeft",
+                    code: "ArrowLeft",
                     keyCode: 37,
                     which: 37,
                     bubbles: true,
@@ -48,9 +49,10 @@
                 e.preventDefault();
                 e.stopPropagation();
                 //log(`\'${nextPageKey}\' pressed`);
-                const rightArrow = new KeyboardEvent('keydown', {
-                    key: 'ArrowRight',
-                    code: 'ArrowRight',
+
+                const rightArrow = new KeyboardEvent("keydown", {
+                    key: "ArrowRight",
+                    code: "ArrowRight",
                     keyCode: 39,
                     which: 39,
                     bubbles: true,

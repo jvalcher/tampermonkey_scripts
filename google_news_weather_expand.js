@@ -22,7 +22,7 @@
 
     window.addEventListener("load", (event) => {
         const timer = setInterval(() => {
-            const el = document.querySelector('[aria-label="Expand to view forecast"]');
+            const el = document.querySelector("[aria-label=\"Expand to view forecast\"]");
             if (el) {
                 el.click();
                 log("expanded");
