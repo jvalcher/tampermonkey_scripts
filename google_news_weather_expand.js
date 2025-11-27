@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Google News Weather Expand
 // @namespace    http://tampermonkey.net/
-// @version      2025-11-27
+// @version      0.2
 // @description  Expand the Google News weather widget to show forecast
 // @author       You
 // @match        https://news.google.com/home*
@@ -10,19 +10,25 @@
 // ==/UserScript==
 
 (function() {
-  'use strict';
+  "use strict";
 
-const title = "Tampermonkey -- Google News Weather Expand";
+    function log(msg) {
+        const w = "color: white;";
+        const g = "color: green;";
+        const y = "color: yellow;";
+        const scriptTitle = "[%cTampermonkey%c] %cGoogle News Weather Expand%c";
+        console.log(`${scriptTitle}: ${msg}`, g, w, y, w);
+    }
 
-window.addEventListener("load", (event) => {
-  const timer = setInterval(() => {
-      const el = document.querySelector('[aria-label="Expand to view forecast"]');
-      if (el) {
-          el.click();
-          console.log(`${title}: expanded`);
-          clearInterval(timer);
-      }
-  }, 1000);
-});
+    window.addEventListener("load", (event) => {
+        const timer = setInterval(() => {
+            const el = document.querySelector('[aria-label="Expand to view forecast"]');
+            if (el) {
+                el.click();
+                log("expanded");
+                clearInterval(timer);
+            }
+        }, 500);
+    });
 
 })();
