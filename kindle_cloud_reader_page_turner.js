@@ -22,44 +22,44 @@
         console.log(`${scriptTitle}: ${msg}`, g, w, y, w);
     }
 
-    const prevPageKey = 'j';
-    const nextPageKey = 'k';
+    const upPageKey = 'k';
+    const downPageKey = 'j';
 
     window.addEventListener("load", () => {
         window.addEventListener("keydown", (e) => {
 
-            if (e.key === prevPageKey) {
+            if (e.key === downPageKey) {
                 e.preventDefault();
                 e.stopPropagation();
                 //log(`\'${prevPageKey}\' pressed`);
 
-                const leftArrow = new KeyboardEvent("keydown", {
-                    key: "ArrowLeft",
-                    code: "ArrowLeft",
-                    keyCode: 37,
-                    which: 37,
+                const downArrow = new KeyboardEvent("keydown", {
+                    key: "ArrowDown",
+                    code: "ArrowDown",
+                    keyCode: 40,
+                    which: 40,
                     bubbles: true,
                     cancelable: true,
                     composed: true
                 });
-                (document.activeElement || document).dispatchEvent(leftArrow);
+                (document.activeElement || document).dispatchEvent(downArrow);
             }
 
-            else if (e.key === nextPageKey) {
+            else if (e.key === upPageKey) {
                 e.preventDefault();
                 e.stopPropagation();
                 //log(`\'${nextPageKey}\' pressed`);
 
-                const rightArrow = new KeyboardEvent("keydown", {
-                    key: "ArrowRight",
-                    code: "ArrowRight",
-                    keyCode: 39,
-                    which: 39,
+                const upArrow = new KeyboardEvent("keydown", {
+                    key: "ArrowUp",
+                    code: "ArrowUp",
+                    keyCode: 38,
+                    which: 38,
                     bubbles: true,
                     cancelable: true,
                     composed: true
                 });
-                (document.activeElement || document).dispatchEvent(rightArrow);
+                (document.activeElement || document).dispatchEvent(upArrow);
             }
         });
 
